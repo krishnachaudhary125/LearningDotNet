@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Xml.Linq;
+
+namespace LearningDotNet.Basic.IO
+{
+    internal class Questions
+    {
+        internal void QuestionOne()
+        {
+            Console.WriteLine("Hello World!!");
+        }
+
+        internal void QuestionTwo()
+        {
+            string name;
+            int age;
+
+            Console.Write("Enter name : ");
+            name = Console.ReadLine();
+            Console.Write("Enter age : ");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("\nName : " + name + "\n" + "Age : " + age);
+        }
+
+        internal void QuestionThree()
+        {
+            double feranhite, celsius;
+
+            Console.Write("Enter celsius to convert : ");
+            celsius = Convert.ToDouble(Console.ReadLine());
+
+            feranhite = celsius * ((double)9/5) + 32;
+            Console.WriteLine("\nFeranhite : " + feranhite);
+        }
+    }
+}
