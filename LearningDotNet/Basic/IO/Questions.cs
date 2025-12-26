@@ -7,6 +7,7 @@ namespace LearningDotNet.Basic.IO
 {
     internal class Questions
     {
+        const double pi = 3.14;
         internal void QuestionOne()
         {
             Console.WriteLine("Hello World!!");
@@ -34,6 +35,17 @@ namespace LearningDotNet.Basic.IO
 
             feranhite = celsius * ((double)9/5) + 32;
             Console.WriteLine("\nFeranhite : " + feranhite);
+        }
+
+        internal void QuestionFour()
+        {
+           double radius, area;
+
+             Console.Write("Enter radius of circle : ");
+            radius = Convert.ToDouble(Console.ReadLine());
+
+            area = pi * radius * radius;
+            Console.WriteLine("\nArae : " + area);
         }
     }
 }

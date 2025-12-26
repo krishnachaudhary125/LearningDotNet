@@ -33,6 +33,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Convert Celsius to Fahrenheit.\n");
                     que.QuestionThree();
                     break;
+
+                case 4:
+                    Console.WriteLine("\n" + n + ". Find area of a circle.\n");
+                    que.QuestionFour();
+                    break;
             }
         } while (true);
     }
