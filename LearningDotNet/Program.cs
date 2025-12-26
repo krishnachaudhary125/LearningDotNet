@@ -38,6 +38,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Find area of a circle.\n");
                     que.QuestionFour();
                     break;
+
+                case 5:
+                    Console.WriteLine("\n"+n+ ". Check whether a number is odd or even.\n");
+                    que.QuestionFive();
+                    break;
             }
         } while (true);
     }

@@ -39,13 +39,32 @@ namespace LearningDotNet.Basic.IO
 
         internal void QuestionFour()
         {
-           double radius, area;
+            double radius, area;
 
-             Console.Write("Enter radius of circle : ");
+            Console.Write("Enter radius of circle : ");
             radius = Convert.ToDouble(Console.ReadLine());
 
             area = pi * radius * radius;
             Console.WriteLine("\nArae : " + area);
+        }
+
+        internal void QuestionFive()
+        {
+            int num, temp;
+
+            Console.Write("Enter any number to check odd or even : ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            temp = num % 2;
+
+            if(temp == 0)
+            {
+                Console.WriteLine("\n"+num+" is even number.");
+            }
+            else
+            {
+                Console.WriteLine("\n"+num + " is odd number.");
+            }
         }
     }
 }
