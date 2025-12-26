@@ -50,6 +50,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Find the largest of three numbers.\n");
                     con.QuestionSix();
                     break;
+
+                case 7:
+                    Console.WriteLine("\n" + n + ". Check whether a number is positive, negative, or zero.\n");
+                    que.QuestionSeven();
+                    break;
             }
         } while (true);
     }

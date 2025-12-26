@@ -22,5 +22,25 @@ namespace LearningDotNet.Basic.Conditions
 
             Console.WriteLine("\n" + res);
         }
+
+        internal void QuestionSeven() 
+        {
+            int num;
+            Console.Write("Enter number to check positive, negative or zero : ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            if (num > 0)
+            {
+                Console.WriteLine("\n" + num + " is positive.");
+            }
+            else if (num < 0)
+            {
+                Console.WriteLine("\n" + num + " is negative.");
+            }
+            else
+            {
+                Console.WriteLine("\nThe number is zero.");
+            }
+        }
     }
 }
