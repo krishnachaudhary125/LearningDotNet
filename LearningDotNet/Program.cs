@@ -1,4 +1,5 @@
 ﻿using LearningDotNet.Basic.IO;
+using LearningDotNet.Basic.Conditions;
 
 class Program
 {
@@ -6,6 +7,7 @@ class Program
     {
         int n;
         Questions que = new Questions();
+        Conditions con = new Conditions();
 
         do
         {
@@ -42,6 +44,11 @@ class Program
                 case 5:
                     Console.WriteLine("\n"+n+ ". Check whether a number is odd or even.\n");
                     que.QuestionFive();
+                    break;
+
+                case 6:
+                    Console.WriteLine("\n" + n + ". Find the largest of three numbers.\n");
+                    con.QuestionSix();
                     break;
             }
         } while (true);
