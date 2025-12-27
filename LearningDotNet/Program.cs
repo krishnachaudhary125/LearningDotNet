@@ -1,5 +1,6 @@
 ﻿using LearningDotNet.Basic.IO;
 using LearningDotNet.Basic.Conditions;
+using LearningDotNet.Basic.Loops;
 
 class Program
 {
@@ -8,6 +9,7 @@ class Program
         int n;
         Questions que = new Questions();
         Conditions con = new Conditions();
+        Loops loop = new Loops();
 
         do
         {
@@ -69,6 +71,11 @@ class Program
                 case 10:
                     Console.WriteLine("\n" + n + ". Simple calculator using switch-case.\n");
                     con.QuestionTen();
+                    break;
+
+                case 11:
+                    Console.WriteLine("\n" + n + ". \n");
+                    loop.QuestionEleven();
                     break;
             }
         } while (true);
