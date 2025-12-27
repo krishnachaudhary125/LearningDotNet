@@ -65,6 +65,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Calculate grade based on marks.\n");
                     con.QuestionNine();
                     break;
+
+                case 10:
+                    Console.WriteLine("\n" + n + ". Simple calculator using switch-case.\n");
+                    con.QuestionTen();
+                    break;
             }
         } while (true);
     }
