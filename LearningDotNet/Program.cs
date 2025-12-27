@@ -53,7 +53,12 @@ class Program
 
                 case 7:
                     Console.WriteLine("\n" + n + ". Check whether a number is positive, negative, or zero.\n");
-                    que.QuestionSeven();
+                    con.QuestionSeven();
+                    break;
+
+                case 8:
+                    Console.WriteLine("\n"+n+ ". Check whether a year is a leap year.\n");
+                    con.QuestionEight();
                     break;
             }
         } while (true);

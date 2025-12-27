@@ -42,5 +42,21 @@ namespace LearningDotNet.Basic.Conditions
                 Console.WriteLine("\nThe number is zero.");
             }
         }
+
+        internal void QuestionEight()
+        {
+            int year;
+            Console.Write("Enter year to check leap year : ");
+            year = Convert.ToInt32(Console.ReadLine());
+
+            if((year % 4 == 0 && year % 100 !=0)|| (year % 400 == 0))
+            {
+                Console.WriteLine("\n" + year + " is a leap year.");
+            }
+            else
+            {
+                Console.WriteLine("\n" + year + " is not a leap year.");
+            }
+        }
     }
 }
