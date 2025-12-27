@@ -60,6 +60,11 @@ class Program
                     Console.WriteLine("\n"+n+ ". Check whether a year is a leap year.\n");
                     con.QuestionEight();
                     break;
+
+                case 9:
+                    Console.WriteLine("\n" + n + ". Calculate grade based on marks.\n");
+                    con.QuestionNine();
+                    break;
             }
         } while (true);
     }

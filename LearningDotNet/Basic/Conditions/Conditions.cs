@@ -58,5 +58,42 @@ namespace LearningDotNet.Basic.Conditions
                 Console.WriteLine("\n" + year + " is not a leap year.");
             }
         }
+
+        internal void QuestionNine()
+        {
+            double marks;
+            Console.Write("Enter the marks to check grade : ");
+            marks = Convert.ToDouble(Console.ReadLine());
+
+            if (marks >= 90 && marks <= 100)
+            {
+                Console.WriteLine("\n" + marks + " is A+.");
+            }
+            else if (marks >= 80 && marks < 90)
+            {
+                Console.WriteLine("\n" + marks + " is A.");
+            }
+            else if (marks >= 70 && marks < 80)
+            {
+                Console.WriteLine("\n" + marks + " is B+.");
+            }
+            else if (marks >= 60 && marks < 70)
+            {
+                Console.WriteLine("\n" + marks + " is B.");
+            }
+            else if (marks >= 50 && marks < 60)
+            {
+                Console.WriteLine("\n" + marks + " is C+.");
+            }
+            else if (marks >= 40 && marks < 50)
+            {
+                Console.WriteLine("\n" + marks + " is C.");
+            }
+            else
+            {
+                Console.WriteLine("\nNot Graded.");
+            }
+
+        }
     }
 }
