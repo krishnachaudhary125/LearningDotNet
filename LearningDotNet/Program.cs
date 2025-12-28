@@ -82,6 +82,11 @@ class Program
                     Console.WriteLine("\n"+ n + ". Print multiplication table of a number.\n");
                     loop.QuestionTwelve();
                     break;
+
+                case 13:
+                    Console.WriteLine("\n" + n + ". Find sum of first N natural numbers.\n");
+                    loop.QuestionThirteen();
+                    break;
             }
         } while (true);
     }

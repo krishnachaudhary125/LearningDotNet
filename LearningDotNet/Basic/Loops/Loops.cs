@@ -32,5 +32,16 @@ namespace LearningDotNet.Basic.Loops
                 Console.WriteLine(num+ " * "+i+" : "+result);
             }
         }
+
+        internal void QuestionThirteen()
+        {
+            int num, result;
+            Console.Write("Enter n natural number : ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            result = (num * (num + 1)) / 2;
+
+            Console.WriteLine("\nSum of first "+num+" natural numbers : "+result);
+        }
     }
 }
