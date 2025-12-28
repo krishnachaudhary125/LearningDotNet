@@ -43,5 +43,22 @@ namespace LearningDotNet.Basic.Loops
 
             Console.WriteLine("\nSum of first "+num+" natural numbers : "+result);
         }
+
+        internal void QuestionFourteen()
+        {
+            int num, temp=0, digit;
+            Console.Write("Enter a number to reverse : ");
+            num = Convert.ToInt32(Console.ReadLine());
+            int original = num;
+
+            while (num > 0)
+            { 
+                digit = num % 10;
+                temp = temp * 10 + digit;
+                num = num / 10;
+            }
+
+            Console.WriteLine("\nReverse of "+original+ " : "+ temp);
+        }
     }
 }

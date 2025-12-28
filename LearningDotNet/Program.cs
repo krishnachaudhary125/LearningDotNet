@@ -87,6 +87,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Find sum of first N natural numbers.\n");
                     loop.QuestionThirteen();
                     break;
+
+                case 14:
+                    Console.WriteLine("\n" + n + ". Reverse a number.\n");
+                    loop.QuestionFourteen();
+                    break;
             }
         } while (true);
     }
