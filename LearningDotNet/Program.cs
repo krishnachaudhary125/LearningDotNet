@@ -77,6 +77,11 @@ class Program
                     Console.WriteLine("\n" + n + ". \n");
                     loop.QuestionEleven();
                     break;
+
+                case 12:
+                    Console.WriteLine("\n"+ n + ". Print multiplication table of a number.\n");
+                    loop.QuestionTwelve();
+                    break;
             }
         } while (true);
     }

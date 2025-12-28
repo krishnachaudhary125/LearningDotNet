@@ -17,5 +17,20 @@ namespace LearningDotNet.Basic.Loops
                 Console.WriteLine("\n" + i);
             }
         }
+
+        internal void QuestionTwelve()
+        {
+            int num, result;
+            Console.Write("Enter a number to print its multiplication table : ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("\nMultiplication table of " + num);
+
+            for(int i =1; i<=10; i++)
+            {
+                result = num * i;
+                Console.WriteLine(num+ " * "+i+" : "+result);
+            }
+        }
     }
 }
