@@ -92,6 +92,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Reverse a number.\n");
                     loop.QuestionFourteen();
                     break;
+
+                case 15:
+                    Console.WriteLine("\n" + n + ". Find factorial of a number.\n");
+                    loop.QuestionFifteen();
+                    break;
             }
         } while (true);
     }

@@ -60,5 +60,19 @@ namespace LearningDotNet.Basic.Loops
 
             Console.WriteLine("\nReverse of "+original+ " : "+ temp);
         }
+
+        internal void QuestionFifteen()
+        {
+            int num, result = 1;
+            Console.Write("Enter a number to find its factorial : ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for(int i= 2; i <=num; i++)
+            {
+                result = result * i;
+            }
+
+            Console.WriteLine("\nFactorial of "+num+" : "+ result);
+        }
     }
 }
