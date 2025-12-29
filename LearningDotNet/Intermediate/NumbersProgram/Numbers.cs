@@ -77,5 +77,19 @@ namespace LearningDotNet.Intermediate.NumbersProgram
             }
             Console.WriteLine();
         }
+
+        internal void QuestionNineteen()
+        {
+            int num, result = 0; ;
+            Console.Write("Entet the length of fibonacci series : ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for(int i = 1; i<=num; i++)
+            {
+                result = result + i;
+                Console.Write(result + " ");
+            }
+            Console.WriteLine();
+        }
     }
 }

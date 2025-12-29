@@ -114,6 +114,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Find prime numbers between 1 and 100.\n");
                     number.QuestionEighteen();
                     break;
+
+                case 19:
+                    Console.WriteLine("\n" + n + ". Fibonacci series.\n");
+                    number.QuestionNineteen();
+                    break;
             }
         } while (true);
     }
