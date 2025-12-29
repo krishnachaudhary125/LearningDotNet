@@ -101,8 +101,13 @@ class Program
                     break;
 
                 case 16:
-                    Console.WriteLine("\n" + n + ". Check palindrome number\n");
+                    Console.WriteLine("\n" + n + ". Check palindrome number.\n");
                     number.QuestionSixteen();
+                    break;
+
+                case 17:
+                    Console.WriteLine("\n" + n + ". Check Armstrong number.\n");
+                    number.QuestionSeventeen();
                     break;
             }
         } while (true);
