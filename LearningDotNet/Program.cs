@@ -119,6 +119,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Fibonacci series.\n");
                     number.QuestionNineteen();
                     break;
+
+                case 20:
+                    Console.WriteLine("\n" + n + ". Count digits in a number.\n");
+                    number.QuestionTwenty();
+                    break;
             }
         } while (true);
     }

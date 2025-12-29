@@ -57,7 +57,7 @@ namespace LearningDotNet.Intermediate.NumbersProgram
 
         internal void QuestionEighteen()
         {
-            Console.WriteLine("Prime numbers : ");
+            Console.WriteLine("Prime numbers : \n");
             for(int i = 2; i<=100; i++)
             {
                 bool isPrime = true;
@@ -81,7 +81,7 @@ namespace LearningDotNet.Intermediate.NumbersProgram
         internal void QuestionNineteen()
         {
             int num, result = 0; ;
-            Console.Write("Entet the length of fibonacci series : ");
+            Console.Write("Entet the length of fibonacci series : \n");
             num = Convert.ToInt32(Console.ReadLine());
 
             for(int i = 1; i<=num; i++)
@@ -90,6 +90,20 @@ namespace LearningDotNet.Intermediate.NumbersProgram
                 Console.Write(result + " ");
             }
             Console.WriteLine();
+        }
+
+        internal void QuestionTwenty()
+        {
+            int num, count = 0;
+            Console.Write("Enter number to count its digits : ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            while (num > 0)
+            {
+                num = num / 10;
+                count++;
+            }
+            Console.WriteLine("\n"+"Number of digits is : "+count);
         }
     }
 }
