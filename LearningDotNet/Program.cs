@@ -109,6 +109,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Check Armstrong number.\n");
                     number.QuestionSeventeen();
                     break;
+
+                case 18:
+                    Console.WriteLine("\n" + n + ". Find prime numbers between 1 and 100.\n");
+                    number.QuestionEighteen();
+                    break;
             }
         } while (true);
     }

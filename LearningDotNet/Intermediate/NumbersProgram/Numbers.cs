@@ -54,5 +54,28 @@ namespace LearningDotNet.Intermediate.NumbersProgram
                 Console.WriteLine("\n" + original + " is not an armstrong number.");
             }
         }
+
+        internal void QuestionEighteen()
+        {
+            Console.WriteLine("Prime numbers : ");
+            for(int i = 2; i<=100; i++)
+            {
+                bool isPrime = true;
+
+                for(int j = 2; j<=Math.Sqrt(i); j++)
+                {
+                    if(i % j == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime)
+                {
+                    Console.Write(i + " ");
+                }
+            }
+            Console.WriteLine();
+        }
     }
 }
