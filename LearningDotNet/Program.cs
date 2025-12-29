@@ -1,6 +1,7 @@
 ﻿using LearningDotNet.Basic.IO;
 using LearningDotNet.Basic.Conditions;
 using LearningDotNet.Basic.Loops;
+using LearningDotNet.Intermediate.NumbersProgram;
 
 class Program
 {
@@ -9,6 +10,7 @@ class Program
         int n;
         Questions que = new Questions();
         Conditions con = new Conditions();
+        Numbers number = new Numbers();
         Loops loop = new Loops();
 
         do
@@ -96,6 +98,11 @@ class Program
                 case 15:
                     Console.WriteLine("\n" + n + ". Find factorial of a number.\n");
                     loop.QuestionFifteen();
+                    break;
+
+                case 16:
+                    Console.WriteLine("\n" + n + ". Check palindrome number\n");
+                    number.QuestionSixteen();
                     break;
             }
         } while (true);
