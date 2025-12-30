@@ -2,6 +2,7 @@
 using LearningDotNet.Basic.Conditions;
 using LearningDotNet.Basic.Loops;
 using LearningDotNet.Intermediate.NumbersProgram;
+using LearningDotNet.Intermediate.Arrays;
 
 class Program
 {
@@ -12,6 +13,7 @@ class Program
         Conditions con = new Conditions();
         Numbers number = new Numbers();
         Loops loop = new Loops();
+        Arrays array = new Arrays();
 
         do
         {
@@ -123,6 +125,11 @@ class Program
                 case 20:
                     Console.WriteLine("\n" + n + ". Count digits in a number.\n");
                     number.QuestionTwenty();
+                    break;
+
+                case 21:
+                    Console.WriteLine("\n" + n + ". Store and display N numbers using array.\n");
+                    array.QuestionTwentyOne();
                     break;
             }
         } while (true);
