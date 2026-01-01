@@ -77,5 +77,34 @@ namespace LearningDotNet.Intermediate.Arrays
             }
             Console.WriteLine();
         }
+
+        internal void QuestionTwentyFour()
+        {
+            int[] num = new int[10] { 123, 12, 147, 15, 16, 156, 1234, 127, 10, 1 };
+            int search;
+            Console.Write("Array : ");
+            for (int j = 0; j < num.Length; j++)
+            {
+                Console.Write(num[j] + " ");
+            }
+            Console.WriteLine();
+            Console.Write("Enter number to be search : ");
+            search = Convert.ToInt32(Console.ReadLine());
+
+            bool found = false;
+            for(int i = 0; i < num.Length; i++)
+            {
+                if (num[i] == search)
+                {
+                    Console.WriteLine("\nNumber "+search+" found in index "+i);
+                    found = true;
+                    break;
+                }
+            }
+            if (!found)
+            {
+                Console.WriteLine("\nNumber not found.");
+            }
+        }
     }
 }

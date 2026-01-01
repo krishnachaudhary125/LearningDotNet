@@ -141,6 +141,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Sort an array.\n");
                     array.QuestionTwentyThree();
                     break;
+
+                case 24:
+                    Console.WriteLine("\n" + n + ". Search an element in an array.\n");
+                    array.QuestionTwentyFour();
+                    break;
             }
         } while (true);
     }
