@@ -136,6 +136,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Find maximum and minimum in an array.\n");
                     array.QuestionTwentyTwo();
                     break;
+
+                case 23:
+                    Console.WriteLine("\n" + n + ". Sort an array.\n");
+                    array.QuestionTwentyThree();
+                    break;
             }
         } while (true);
     }
