@@ -146,6 +146,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Search an element in an array.\n");
                     array.QuestionTwentyFour();
                     break;
+
+                case 25:
+                    Console.WriteLine("\n" + n + ". Reverse an array.\n");
+                    array.QuestionTwentyFive();
+                    break;
             }
         } while (true);
     }

@@ -106,5 +106,28 @@ namespace LearningDotNet.Intermediate.Arrays
                 Console.WriteLine("\nNumber not found.");
             }
         }
+
+        internal void QuestionTwentyFive()
+        {
+            int[] num = new int[10] { 123, 12, 147, 15, 16, 156, 1234, 127, 10, 1 };
+            int temp;
+            int start = 0;
+            int end = num.Length - 1;
+            while (start < end)
+            {
+                temp = num[end];
+                num[end] = num[start];
+                num[start] = temp;
+                start++;
+                end--;
+            }
+
+            Console.WriteLine();
+            foreach(int i in num)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+        }
     }
 }
