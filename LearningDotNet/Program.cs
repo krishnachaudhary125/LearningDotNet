@@ -131,6 +131,11 @@ class Program
                     Console.WriteLine("\n" + n + ". Store and display N numbers using array.\n");
                     array.QuestionTwentyOne();
                     break;
+
+                case 22:
+                    Console.WriteLine("\n" + n + ". Find maximum and minimum in an array.\n");
+                    array.QuestionTwentyTwo();
+                    break;
             }
         } while (true);
     }

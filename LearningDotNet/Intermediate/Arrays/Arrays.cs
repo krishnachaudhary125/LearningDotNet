@@ -25,5 +25,24 @@ namespace LearningDotNet.Intermediate.Arrays
             }
             Console.WriteLine();
         }
+
+        internal void QuestionTwentyTwo()
+        {
+            int[] num = new int[10] {123, 12, 147, 15, 16, 156, 1234, 127, 10, 1};
+            int min = num[0];
+            int max = num[0];
+            for(int i = 0; i<num.Length; i++)
+            {
+                if (num[i] < min)
+                {
+                    min = num[i];
+                }
+                else if (num[i] > max)
+                {
+                    max = num[i];
+                }
+            }
+            Console.WriteLine("\nMaximum number in array is "+max+"\nMinimum number in array is "+min);
+        }
     }
 }
